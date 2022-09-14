@@ -10,9 +10,9 @@
 
 <body>
     <script>
-        let age =window.prompt("¿Cual es tu edad?")
-        let height =window.prompt("¿Cual es tu altura?")
-        let allowed =window.prompt("¿Tienes permiso?")
+        let age =Number (window.prompt("¿Cual es tu edad?"))
+        let height =Number (window.prompt("¿Cual es tu altura?"))
+        let allowed =Boolean (window.prompt("¿Tienes permiso?"))
 
         if (age >= 18) {
             document.write("si puede")

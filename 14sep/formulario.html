@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sa>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<form > 
+    <label>age </label>
+    <input type="number"  id = "age" >
+
+    <label>height</label>
+    <input type="number"  id = "height"  step="any" >
+
+    <label>allowed</label>
+    <input type="checkbox"  id = "allowed"  >
+
+ 
+    <input type="submit" value="Enviar" onclick ="onSubmit()">
+
+</form>
+    
+
+    <script>
+
+        const onSubmit=()=> {
+
+            let age =Number (document.getElementById ("age").value)
+            let height =Number (document.getElementById ("height").value)
+            let allowed =Boolean (document.getElementById ("allowed").value)
+
+            if (age >= 18) {
+                document.write("si puede")
+            } else {
+                if (age >= 16 && age < 18 && height >= 1.70) {
+                    document.write("si puede entrar al juego")
+                } else if (age == 15 && allowed == true){
+                    document.write ("puede entrar al juego")
+                }else {
+                    document.write ("no tiene permiso de ingreso" )
+                }
+
+            
+            }
+        
+     }
+        
+
+
+
+    </script>
+</body>
+
+</html>
