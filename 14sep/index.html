@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=sa>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let age =window.prompt("¿Cual es tu edad?")
+        let height =window.prompt("¿Cual es tu altura?")
+        let allowed =window.prompt("¿Tienes permiso?")
+
+        if (age >= 18) {
+            document.write("si puede")
+        } else {
+            if (age >= 16 && age < 18 && height >= 1.70) {
+                document.write("si puede entrar al juego")
+            } else if (age == 15 && allowed == true){
+                document.write ("puede entrar al juego")
+            }else {
+                document.write ("no tiene permiso de ingreso" )
+            }
+
+        
+        }
+        
+
+        
+
+
+
+    </script>
+</body>
+
+</html>
